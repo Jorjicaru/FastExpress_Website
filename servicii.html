@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastExpress - Servicii</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagini/logo_curieri.jpg">
+</head>
+<body>
+
+    <header class="antet">
+        <div class="logo-box">
+            <a href="index.html" style="text-decoration:none; color:inherit; display: grid; grid-template-columns: auto auto; gap: 10px; align-items: center;">
+                <img src="imagini/logo_curieri.jpg" alt="Logo" class="logo-img">
+                <span class="nume-site">FastExpress</span>
+            </a>
+        </div>
+
+        <nav class="meniu-pc">
+            <a href="index.html"><i class="fas fa-home"></i> Firma</a>
+            <a href="servicii.html" class="activ"><i class="fas fa-box-open"></i> Servicii</a>
+            <a href="flota.html"><i class="fas fa-camera"></i> Flota</a>
+            <a href="echipa.html"><i class="fas fa-users"></i> Echipa</a>
+            <a href="despre.html"><i class="fas fa-info-circle"></i> Despre noi</a>
+            <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+            <a href="blog.html"><i class="fas fa-bolt"></i> Blog</a>
+        </nav>
+
+        <a href="javascript:void(0);" class="btn-mobil" onclick="schimbaMeniu()">
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <span>Meniu</span>
+        </a>
+    </header>
+
+    <div id="meniu-tel" class="overlay-mobil">
+        <a href="javascript:void(0)" class="btn-inchide" onclick="schimbaMeniu()">&times;</a>
+        <div class="linkuri-mobil">
+            <a href="index.html">Firma</a>
+            <a href="flota.html">Flota</a>
+            <a href="echipa.html">Echipa</a>
+            <a href="despre.html">Despre noi</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </div>
+
+    <main class="fundal-servicii">
+        
+        <h1 class="titlu-servicii">Soluții complete de curierat</h1>
+
+        <div class="grid-servicii">
+            
+            <div class="zona-carduri-servicii">
+                
+                <a href="serviciu_usa.html" class="card-serviciu">
+                    <h3>Livrare în<br>fața ușii</h3>
+                    <i class="fas fa-home"></i>
+                </a>
+
+                <a href="serviciu_international.html" class="card-serviciu">
+                    <h3>International</h3>
+                    <i class="fas fa-globe"></i>
+                </a>
+
+                <a href="serviciu_locker.html" class="card-serviciu">
+                    <h3>Livrare la<br>PICK-UP</h3>
+                    <i class="fas fa-server"></i>
+                </a>
+
+            </div>
+
+            <div class="zona-tabel-servicii">
+                <div class="tabel-scroll">
+                    <table class="tabel-comparativ">
+                        <thead>
+                            <tr>
+                                <th style="text-align: left;">CARACTERISTICI</th>
+                                <th><i class="fas fa-home" style="color:#ffaa00;"></i> LIVRARE LA UȘĂ</th>
+                                <th><i class="fas fa-globe" style="color:#6fa8dc;"></i> INTERNAȚIONAL</th>
+                                <th><i class="fas fa-box" style="color:#cd7f32;"></i> LIVRARE PICK-UP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="bold">Timp de livrare</td>
+                                <td>24 - 48 Ore</td>
+                                <td>3 - 7 Zile</td>
+                                <td>24 Ore</td>
+                            </tr>
+                            <tr class="rand-colorat">
+                                <td class="bold">Cost</td>
+                                <td>Standard</td>
+                                <td>Premium</td>
+                                <td>Economic</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Limită Greutate</td>
+                                <td>30 kg</td>
+                                <td>20 kg</td>
+                                <td>10 kg</td>
+                            </tr>
+                            <tr class="rand-colorat">
+                                <td class="bold">Tracking Live</td>
+                                <td class="verde"><i class="fas fa-check-square"></i></td>
+                                <td class="verde"><i class="fas fa-check-square"></i></td>
+                                <td class="verde"><i class="fas fa-check-square"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Asigurare</td>
+                                <td>Inclusă</td>
+                                <td>Extra</td>
+                                <td>Basic</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="subsol">
+        <div class="linkuri-jos">
+            <a href="despre.html">Despre</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="termeni.html">Termeni și condiții</a>
+        </div>
+        <div class="social">
+            <span>Social</span>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

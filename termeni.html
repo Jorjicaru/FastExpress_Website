@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastExpress - Termeni și Condiții</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagini/logo_curieri.jpg">
+</head>
+<body>
+
+    <header class="antet">
+        <div class="logo-box">
+            <a href="index.html" style="text-decoration:none; color:inherit; display: grid; grid-template-columns: auto auto; gap: 10px; align-items: center;">
+                <img src="imagini/logo_curieri.jpg" alt="Logo" class="logo-img">
+                <span class="nume-site">FastExpress</span>
+            </a>
+        </div>
+
+        <nav class="meniu-pc">
+            <a href="index.html"><i class="fas fa-home"></i> Firma</a>
+            <a href="servicii.html"><i class="fas fa-box-open"></i> Servicii</a>
+            <a href="flota.html"><i class="fas fa-camera"></i> Flota</a>
+            <a href="echipa.html"><i class="fas fa-users"></i> Echipa</a>
+            <a href="despre.html"><i class="fas fa-info-circle"></i> Despre noi</a>
+            <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+            <a href="blog.html"><i class="fas fa-bolt"></i> Blog</a>
+        </nav>
+
+        <a href="javascript:void(0);" class="btn-mobil" onclick="schimbaMeniu()">
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <span>Meniu</span>
+        </a>
+    </header>
+
+    <div id="meniu-tel" class="overlay-mobil">
+        <a href="javascript:void(0)" class="btn-inchide" onclick="schimbaMeniu()">&times;</a>
+        <div class="linkuri-mobil">
+            <a href="index.html">Firma</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="flota.html">Flota</a>
+            <a href="echipa.html">Echipa</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <main class="container-termeni">
+        
+        <h1 class="titlu-legal">Termeni și Condiții de Utilizare</h1>
+        <p class="data-actualizare">Ultima actualizare: 01.01.2026</p>
+
+        <div class="text-legal">
+            <h3>1. Dispoziții Generale</h3>
+            <p>Prezentul document stabilește termenii și condițiile de utilizare a serviciilor de curierat oferite de SC FASTEXPRESS SRL (denumită în continuare "FastExpress" sau "Prestator"). Utilizarea site-ului și plasarea unei comenzi implică acceptarea necondiționată a acestor termeni.</p>
+
+            <h3>2. Obligațiile Expeditorului</h3>
+            <p>Clientul (Expeditorul) are obligația de a ambala corespunzător bunurile expediate, asigurând protecția acestora pe durata transportului. FastExpress nu își asumă răspunderea pentru deteriorările cauzate de ambalarea necorespunzătoare (cutii rupte, lipsa materialelor de protecție internă etc.).</p>
+            <p>Expeditorul este responsabil pentru corectitudinea datelor destinatarului (adresă, telefon). Orice eroare poate duce la întârzieri sau la imposibilitatea livrării.</p>
+
+            <h3>3. Obiecte Interzise la Transport</h3>
+            <p>Este strict interzisă expedierea următoarelor categorii de bunuri:</p>
+            <ul>
+                <li>Arme, muniții, materiale explozive sau inflamabile;</li>
+                <li>Droguri, substanțe psihotrope sau alte substanțe ilegale;</li>
+                <li>Bani, bijuterii, metale prețioase neasigurate;</li>
+                <li>Animale vii sau bunuri perisabile (fără condiții speciale de transport);</li>
+                <li>Orice alte bunuri interzise prin legea română în vigoare.</li>
+            </ul>
+
+            <h3>4. Termene de Livrare și Răspundere</h3>
+            <p>FastExpress depune toate eforturile pentru a livra expedierile în termenele estimate (24-48 ore pentru livrările naționale standard). Totuși, termenele de livrare nu sunt garantate și pot fi influențate de condiții meteo nefavorabile, trafic intens, sărbători legale sau cazuri de forță majoră.</p>
+            <p>În cazul pierderii sau deteriorării totale a coletului din culpa exclusivă a curierului, FastExpress despăgubește clientul conform legislației în vigoare sau conform valorii declarate a asigurării (dacă serviciul de asigurare a fost achiziționat).</p>
+
+            <h3>5. Politica de Retur</h3>
+            <p>În cazul în care destinatarul refuză primirea coletului sau nu poate fi contactat după încercări repetate, coletul va fi returnat expeditorului. Costurile de transport pentru retur vor fi suportate de către expeditor.</p>
+
+            <h3>6. Prelucrarea Datelor cu Caracter Personal (GDPR)</h3>
+            <p>FastExpress colectează și prelucrează datele personale (nume, adresă, telefon) strict în scopul efectuării serviciului de curierat. Aceste date nu vor fi înstrăinate către terți, cu excepția autorităților competente, la cerere.</p>
+
+            <h3>7. Litigii</h3>
+            <p>Orice litigiu apărut între Client și FastExpress va fi rezolvat pe cale amiabilă. În cazul în care acest lucru nu este posibil, litigiile vor fi soluționate de instanțele judecătorești competente din România.</p>
+        </div>
+
+    </main>
+
+    <footer class="subsol">
+        <div class="linkuri-jos">
+            <a href="despre.html">Despre</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="termeni.html">Termeni și condiții</a>
+        </div>
+        <div class="social">
+            <span>Social</span>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

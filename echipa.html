@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastExpress - Echipa Noastră</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="imagini/logo_curieri.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="antet">
+        <div class="logo-box">
+            <a href="index.html" style="text-decoration:none; color:inherit; display: grid; grid-template-columns: auto auto; gap: 10px; align-items: center;">
+                <img src="imagini/logo_curieri.jpg" alt="Logo" class="logo-img">
+                <span class="nume-site">FastExpress</span>
+            </a>
+        </div>
+
+        <nav class="meniu-pc">
+            <a href="index.html"><i class="fas fa-home"></i> Firma</a>
+            <a href="servicii.html"><i class="fas fa-box-open"></i> Servicii</a>
+            <a href="flota.html"><i class="fas fa-camera"></i> Flota</a>
+            <a href="echipa.html" class="activ"><i class="fas fa-users"></i> Echipa</a>
+            <a href="despre.html"><i class="fas fa-info-circle"></i> Despre noi</a>
+            <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+            <a href="blog.html"><i class="fas fa-bolt"></i> Blog</a>
+        </nav>
+
+        <a href="javascript:void(0);" class="btn-mobil" onclick="schimbaMeniu()">
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <span>Meniu</span>
+        </a>
+    </header>
+
+    <div id="meniu-tel" class="overlay-mobil">
+        <a href="javascript:void(0)" class="btn-inchide" onclick="schimbaMeniu()">&times;</a>
+        <div class="linkuri-mobil">
+            <a href="index.html">Firma</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="flota.html">Flota</a>
+            <a href="despre.html">Despre noi</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </div>
+
+    <main class="fundal-echipa">
+        
+        <div class="header-echipa">
+            <h1 class="titlu-echipa">OAMENII DIN SPATELE LIVRĂRILOR TALE</h1>
+            <p class="subtitlu-echipa">
+                Suntem mai mult decât o firmă de curierat. Suntem o echipă de profesioniști pasionați de logistică, dedicați să ducem fiecare pachet la destinație, rapid și în siguranță.
+            </p>
+        </div>
+
+        <div class="grid-echipa">
+            
+            <div class="card-membru">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80" alt="CEO" class="poza-membru">
+                <div class="info-membru">
+                    <h3>Andrei Popescu</h3>
+                    <h4>CEO & FONDATOR</h4>
+                    <p>"Viziunea mea a fost să creez un serviciu de curierat bazat pe transparență totală și respect față de timpul clientului."</p>
+                </div>
+            </div>
+
+            <div class="card-membru">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="Director Operatiuni" class="poza-membru">
+                <div class="info-membru">
+                    <h3>Maria Ionescu</h3>
+                    <h4>DIRECTOR OPERAȚIUNI</h4>
+                    <p>"Coordonarea a mii de livrări zilnice este o provocare complexă, dar satisfacția clientului la final de zi merită orice efort."</p>
+                </div>
+            </div>
+
+            <div class="card-membru">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=500&q=80" alt="Manager Flota" class="poza-membru">
+                <div class="info-membru">
+                    <h3>Mihai Radu</h3>
+                    <h4>MANAGER FLOTĂ</h4>
+                    <p>"Siguranța este prioritatea zero. Mă asigur că fiecare vehicul care pleacă în cursă este într-o stare tehnică impecabilă."</p>
+                </div>
+            </div>
+
+            <div class="card-membru">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=500&q=80" alt="HR Manager" class="poza-membru">
+                <div class="info-membru">
+                    <h3>Elena Dobre</h3>
+                    <h4>HR MANAGER</h4>
+                    <p>"Oamenii sunt motorul companiei. Caut mereu curieri dedicați și personal de suport care să împărtășească valorile noastre."</p>
+                </div>
+            </div>
+
+            <div class="card-membru">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Team Leader Curieri" class="poza-membru">
+                <div class="info-membru">
+                    <h3>Alex Stan</h3>
+                    <h4>TEAM LEADER CURIERI</h4>
+                    <p>"Sunt pe teren alături de băieți în fiecare zi. Știm fiecare stradă și scurtătură pentru a ajunge la timp."</p>
+                </div>
+            </div>
+
+            <div class="card-membru">
+                <img src="imagini/customer_support.jpg" alt="Customer Support" class="poza-membru">
+                <div class="info-membru">
+                    <h3>Ioana Vasile</h3>
+                    <h4>CUSTOMER SUPPORT LEAD</h4>
+                    <p>"Orice problemă are o rezolvare. Suntem aici să răspundem la telefon și să găsim soluții rapide pentru clienți."</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="subsol">
+        <div class="linkuri-jos">
+            <a href="despre.html">Despre</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="termeni.html">Termeni și condiții</a>
+        </div>
+        <div class="social">
+            <span>Social</span>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

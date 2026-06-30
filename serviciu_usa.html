@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastExpress - Livrare la Ușă</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="imagini/logo_curieri.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="antet">
+        <div class="logo-box">
+            <a href="index.html" style="text-decoration:none; color:inherit; display: grid; grid-template-columns: auto auto; gap: 10px; align-items: center;">
+                <img src="imagini/logo_curieri.jpg" alt="Logo" class="logo-img">
+                <span class="nume-site">FastExpress</span>
+            </a>
+        </div>
+
+        <nav class="meniu-pc">
+            <a href="index.html"><i class="fas fa-home"></i> Firma</a>
+            <a href="servicii.html" class="activ"><i class="fas fa-box-open"></i> Servicii</a>
+            <a href="flota.html"><i class="fas fa-camera"></i> Flota</a>
+            <a href="echipa.html"><i class="fas fa-users"></i> Echipa</a>
+            <a href="despre.html"><i class="fas fa-info-circle"></i> Despre noi</a>
+            <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+            <a href="blog.html"><i class="fas fa-bolt"></i> Blog</a>
+        </nav>
+
+        <a href="javascript:void(0);" class="btn-mobil" onclick="schimbaMeniu()">
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <span>Meniu</span>
+        </a>
+    </header>
+
+    <div id="meniu-tel" class="overlay-mobil">
+        <a href="javascript:void(0)" class="btn-inchide" onclick="schimbaMeniu()">&times;</a>
+        <div class="linkuri-mobil">
+            <a href="index.html">Firma</a>
+            <a href="flota.html">Flota</a>
+            <a href="echipa.html">Echipa</a>
+            <a href="despre.html">Despre noi</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </div>
+
+    <main class="fundal-servicii">
+        
+        <div class="grid-detalii-locker">
+            
+            <div class="card-locker-vizual">
+                <div class="header-card-locker">
+                    <span>Livrare STANDARD</span>
+                    <i class="fas fa-home"></i>
+                </div>
+                
+                <div class="corp-card-locker">
+                    <img src="https://img.freepik.com/free-vector/courier-delivering-order-customer-door-man-getting-parcel-box-package-flat-vector-illustration-postman-shipping-service_74855-8309.jpg" alt="Curier la usa" class="img-locker-demo">
+                </div>
+
+                <div class="footer-card-locker">
+                    DOOR-TO-DOOR
+                </div>
+            </div>
+
+            <div class="info-locker-box">
+                <h2 class="titlu-locker">Livrare rapidă direct la ușa ta</h2>
+                
+                <p class="descriere-locker">
+                    Serviciul nostru clasic Door-to-Door este gândit pentru confortul tău maxim. Curierul preia coletul de la expeditor și îl livrează personal destinatarului, oriunde în România, în 24-48 de ore.
+                    Ideal pentru pachete voluminoase sau când vrei să economisești timp prețios.
+                </p>
+
+                <h3 class="subtitlu-locker">Avantajele livrării la domiciliu:</h3>
+
+                <div class="grid-beneficii">
+                    <div class="beneficiu-item">
+                        <i class="fas fa-couch"></i>
+                        <div>
+                            <strong>Confort Total:</strong>
+                            <span>Nu trebuie să te deplasezi. Venim noi la tine.</span>
+                        </div>
+                    </div>
+
+                    <div class="beneficiu-item">
+                        <i class="fas fa-shipping-fast"></i>
+                        <div>
+                            <strong>Rapiditate:</strong>
+                            <span>Livrăm în 24h în orașele mari și 48h în sate.</span>
+                        </div>
+                    </div>
+
+                    <div class="beneficiu-item">
+                        <i class="fas fa-weight-hanging"></i>
+                        <div>
+                            <strong>Greutate Mare:</strong>
+                            <span>Acceptăm colete de până la 50kg per piesă.</span>
+                        </div>
+                    </div>
+
+                    <div class="beneficiu-item">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <div>
+                            <strong>Ramburs (Cash/Card):</strong>
+                            <span>Poți plăti coletul direct la curier la livrare.</span>
+                        </div>
+                    </div>
+
+                    <div class="beneficiu-item">
+                        <i class="fas fa-sms"></i>
+                        <div>
+                            <strong>Notificare SMS:</strong>
+                            <span>Te anunțăm dimineața când ajunge curierul.</span>
+                        </div>
+                    </div>
+
+                    <div class="beneficiu-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Deschidere la Livrare:</strong>
+                            <span>Poți verifica conținutul înainte să plătești (opțional).</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="subsol">
+        <div class="linkuri-jos">
+            <a href="despre.html">Despre</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="termeni.html">Termeni și condiții</a>
+        </div>
+        <div class="social">
+            <span>Social</span>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

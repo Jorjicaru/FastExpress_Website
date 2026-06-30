@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastExpress - Livrare Internațională</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="imagini/logo_curieri.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="antet">
+        <div class="logo-box">
+            <a href="index.html" style="text-decoration:none; color:inherit; display: grid; grid-template-columns: auto auto; gap: 10px; align-items: center;">
+                <img src="imagini/logo_curieri.jpg" alt="Logo" class="logo-img">
+                <span class="nume-site">FastExpress</span>
+            </a>
+        </div>
+
+        <nav class="meniu-pc">
+            <a href="index.html"><i class="fas fa-home"></i> Firma</a>
+            <a href="servicii.html" class="activ"><i class="fas fa-box-open"></i> Servicii</a>
+            <a href="flota.html"><i class="fas fa-camera"></i> Flota</a>
+            <a href="echipa.html"><i class="fas fa-users"></i> Echipa</a>
+            <a href="despre.html"><i class="fas fa-info-circle"></i> Despre noi</a>
+            <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+            <a href="blog.html"><i class="fas fa-bolt"></i> Blog</a>
+        </nav>
+
+        <a href="javascript:void(0);" class="btn-mobil" onclick="schimbaMeniu()">
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <span>Meniu</span>
+        </a>
+    </header>
+
+    <div id="meniu-tel" class="overlay-mobil">
+        <a href="javascript:void(0)" class="btn-inchide" onclick="schimbaMeniu()">&times;</a>
+        <div class="linkuri-mobil">
+            <a href="index.html">Firma</a>
+            <a href="flota.html">Flota</a>
+            <a href="echipa.html">Echipa</a>
+            <a href="despre.html">Despre noi</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </div>
+
+    <main class="fundal-servicii">
+        
+        <div class="grid-detalii-locker">
+            
+            <div class="card-locker-vizual">
+                <div class="header-card-locker">
+                    <span>Livrare GLOBALĂ</span>
+                    <i class="fas fa-globe"></i>
+                </div>
+                
+                <div class="corp-card-locker">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Livrare Internationala" class="img-locker-demo">
+                </div>
+
+                <div class="footer-card-locker">
+                    WORLDWIDE SHIPPING
+                </div>
+            </div>
+
+            <div class="info-locker-box">
+                <h2 class="titlu-locker">Conectăm România cu restul lumii</h2>
+                
+                <p class="descriere-locker">
+                    Indiferent dacă trimiți un pachet rudelor din Italia sau exporți produse în Statele Unite, FastExpress îți oferă soluții sigure. 
+                    Avem parteneriate cu marii operatori globali pentru a asigura livrarea în peste 200 de țări, atât rutier (Europa) cât și aerian.
+                </p>
+
+                <h3 class="subtitlu-locker">De ce să alegi serviciul internațional?</h3>
+
+                <div class="grid-beneficii">
+                    <div class="beneficiu-item">
+                        <i class="fas fa-plane-departure"></i>
+                        <div>
+                            <strong>Air Express:</strong>
+                            <span>Livrare ultra-rapidă (24-72h) oriunde în lume.</span>
+                        </div>
+                    </div>
+
+                    <div class="beneficiu-item">
+                        <i class="fas fa-truck-moving"></i>
+                        <div>
+                            <strong>Rutier Economic:</strong>
+                            <span>Tarife mici pentru livrări în Uniunea Europeană.</span>
+                        </div>
+                    </div>
+
+                    <div class="beneficiu-item">
+                        <i class="fas fa-passport"></i>
+                        <div>
+                            <strong>Suport Vamal:</strong>
+                            <span>Te ajutăm cu documentele pentru țările Non-UE.</span>
+                        </div>
+                    </div>
+
+                    <div class="beneficiu-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <strong>Asigurare Inclusă:</strong>
+                            <span>Colete asigurate automat până la 100 Euro.</span>
+                        </div>
+                    </div>
+
+                    <div class="beneficiu-item">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <div>
+                            <strong>Tracking Global:</strong>
+                            <span>Urmărește coletul pas cu pas, peste granițe.</span>
+                        </div>
+                    </div>
+
+                    <div class="beneficiu-item">
+                        <i class="fas fa-box"></i>
+                        <div>
+                            <strong>Export & Import:</strong>
+                            <span>Soluții complete atât pentru trimis, cât și pentru adus.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="subsol">
+        <div class="linkuri-jos">
+            <a href="despre.html">Despre</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="termeni.html">Termeni și condiții</a>
+        </div>
+        <div class="social">
+            <span>Social</span>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

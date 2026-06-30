@@ -1,0 +1,1430 @@
+/* --- SETARI GENERALE SI RESETARE --- */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    width: 100%;
+    padding-top: 70px; 
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+h1, h2, h3, .titlu-mare, .titlu-serif, .titlu-card, .titlu-servicii {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.centru {
+    text-align: center;
+}
+
+/* --- ANTET (HEADER) --- */
+.antet {
+    background-color: #000;
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+}
+
+.logo-box {
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    align-items: center;
+    justify-self: start;
+}
+
+.logo-img {
+    width: 40px;
+}
+
+.nume-site {
+    color: #003366;
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* --- MENIU DESKTOP --- */
+.meniu-pc {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: 20px;
+}
+
+.meniu-pc a {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.meniu-pc a:hover,
+.meniu-pc a.activ {
+    color: #6fa8dc;
+    border-bottom: 2px solid #6fa8dc;
+}
+
+/* --- MENIU MOBIL --- */
+.btn-mobil {
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8rem;
+    justify-self: end;
+}
+
+.linie {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px auto;
+}
+
+.overlay-mobil {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.linkuri-mobil {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.linkuri-mobil a {
+    padding: 20px;
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.linkuri-mobil a:hover {
+    color: #6fa8dc;
+}
+
+.btn-inchide {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* --- PAGINA HOME --- */
+.zona-foto {
+    width: 100%;
+}
+
+.poza-mare {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.zona-butoane {
+    background-color: #e6e6e6;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.titlu-mare {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.grila-butoane {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.btn-albastru {
+    background: linear-gradient(to bottom, #6fa8dc, #4a86b9);
+    border: 1px solid #3c78ad;
+    border-radius: 12px;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.btn-albastru span {
+    justify-self: center;
+}
+
+.btn-albastru:hover {
+    transform: translateY(-3px);
+}
+
+.sageata-jos {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #555;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
+
+/* --- CALCULATOR SI INFO --- */
+.grid-principal {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.card-calc {
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.titlu-calc {
+    background-color: #5b9bd5;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #999;
+}
+
+.corp-calc {
+    padding: 20px 25px;
+}
+
+.rand-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: end;
+}
+
+.grup label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input[type="text"], input[type="number"], input[type="email"], input[type="tel"] {
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    height: 40px;
+}
+
+#loc-plecare, #loc-sosire, #kg {
+    background-color: #6fa8dc;
+    border: 1px solid #333;
+}
+
+.btn-calculeaza {
+    background-color: #5b9bd5;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.btn-calculeaza:hover {
+    background-color: #4a86b9;
+}
+
+.rand-pret-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    border-top: 1px solid #999;
+    padding-top: 20px;
+}
+
+.eticheta-pret {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.afisaj-pret-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 10px;
+}
+
+#pret-final {
+    text-align: center;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.titlu-serif {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.grid-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.grid-iconite {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.card-mic {
+    background-color: #cccccc;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-mic i {
+    color: #2b78e4;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.card-mic h3 {
+    color: #2b78e4;
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+/* --- PAGINA SEDII --- */
+.pagina-sedii {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.descriere-centru {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.container-harta {
+    width: 100%;
+    margin-bottom: 60px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.img-harta {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
+.zona-lista-orase {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.grila-orase {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card-oras {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card-oras:hover {
+    transform: translateY(-5px);
+    border-color: #6fa8dc;
+}
+
+.card-oras i {
+    font-size: 2rem;
+    color: #2b78e4;
+    margin-bottom: 10px;
+}
+
+.card-oras.central {
+    background-color: #e3f2fd;
+    border: 2px solid #2b78e4;
+}
+
+.card-oras.central i {
+    color: #ffaa00;
+}
+
+/* --- PAGINA LOCKERS --- */
+.pagina-harta {
+    width: 100%;
+    max-width: 100%; 
+    padding: 0;
+    margin: 0;
+}
+
+.zona-cautare-harta {
+    max-width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.bara-cautare {
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.btn-cauta {
+    padding: 0 30px;
+    background-color: #2b78e4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.container-map {
+    width: 80%;
+    height: 800px;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 12px; 
+    z-index: 1;
+    position: relative;
+    display: block;
+}
+
+/* --- PAGINA SERVICII --- */
+.fundal-servicii {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('imagini/servicii_main.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    padding: 40px 20px 20px 20px;
+    color: white;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: start;
+}
+
+.titlu-servicii {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.grid-servicii {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.zona-carduri-servicii {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.card-serviciu {
+    background-color: rgba(111, 168, 220, 0.85);
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    height: 180px;
+    
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: center;
+    justify-items: center;
+    
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+    color: white;
+}
+
+.card-serviciu:hover {
+    transform: translateY(-10px);
+    background-color: #6fa8dc;
+}
+
+.card-serviciu h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900; 
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 #000, 3px 3px 5px rgba(0,0,0,0.5);
+}
+
+.card-serviciu i {
+    font-size: 3.5rem;
+    color: #ffffff;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.9));
+}
+
+.zona-tabel-servicii {
+    background-color: rgba(60, 100, 140, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabel-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabel-comparativ {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+    min-width: 600px; 
+}
+
+.tabel-comparativ th {
+    padding: 15px;
+    border-bottom: 2px solid white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.tabel-comparativ td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.rand-colorat {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.verde {
+    color: #00ff00;
+}
+
+/* --- DETALII LOCKER --- */
+.grid-detalii-locker {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 50px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.card-locker-vizual {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+    max-height: 500px;
+}
+
+.header-card-locker {
+    background-color: #6fa8dc;
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.corp-card-locker {
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: #fff;
+}
+
+.img-locker-demo {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.footer-card-locker {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Impact', sans-serif;
+    letter-spacing: 1px;
+    border-top: 1px solid #eee;
+}
+
+.info-locker-box {
+    background-color: rgba(111, 168, 220, 0.9);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.titlu-locker {
+    margin-top: 0;
+    font-size: 1.8rem;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.descriere-locker {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.subtitlu-locker {
+    background-color: rgba(0,0,0,0.2);
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.grid-beneficii {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.beneficiu-item {
+    background-color: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    align-items: start;
+}
+
+.beneficiu-item i {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+.beneficiu-item strong {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
+.beneficiu-item span {
+    font-size: 0.85rem;
+    color: #f0f0f0;
+}
+
+/* --- PAGINA FLOTA --- */
+.fundal-flota {
+    background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('imagini/flota_main.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: calc(100vh - 70px);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+    gap: 30px;
+}
+
+.titlu-flota {
+    font-family: 'Impact', sans-serif;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px #000, -1px -1px 0 #000;
+    margin: 0;
+    max-width: 900px;
+}
+
+.grid-flota {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card-flota {
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #333;
+    padding: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 15px;
+}
+
+.img-card-flota {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px; 
+    border: 1px solid #ccc;
+}
+
+.text-card-flota {
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    align-content: start;
+}
+
+.text-card-flota h3 {
+    font-family: 'Impact', sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+    color: #000;
+}
+
+.text-card-flota p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* --- PAGINA ECHIPA --- */
+.fundal-echipa {
+    background-color: #2b2b2b;
+    color: white;
+    min-height: calc(100vh - 70px);
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    justify-items: center;
+    gap: 50px;
+}
+
+.header-echipa {
+    text-align: center;
+    max-width: 900px;
+}
+
+.titlu-echipa {
+    font-family: 'Impact', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.subtitlu-echipa {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.grid-echipa {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card-membru {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    color: #333;
+    box-shadow: 0 5px 15px rgba(255,255,255,0.1);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+}
+
+.poza-membru {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.info-membru {
+    padding: 25px;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    align-content: start;
+}
+
+.info-membru h3 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.info-membru h4 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: #2b78e4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.info-membru p {
+    margin-top: 15px;
+    font-style: italic;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* --- PAGINA DESPRE NOI --- */
+.container-despre {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr; 
+    gap: 0;
+    min-height: calc(100vh - 70px); 
+    width: 100%;
+}
+
+.col-despre {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.albastru-despre {
+    background-color: #6fa8dc;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.albastru-despre p {
+    margin: 0 0 10px 0;
+}
+
+.lista-despre {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.lista-despre li {
+    margin-bottom: 8px;
+}
+
+.imagine-despre {
+    background-image: url('imagini/ChatGPT\ Image\ 21\ nov.\ 2025\,\ 21_47_12.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    filter: grayscale(100%); 
+    padding: 0;
+    min-height: 100%; 
+}
+
+.text-overlay-despre {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    text-shadow: 1px 1px 3px black;
+}
+
+/* --- PAGINA BLOG --- */
+.grid-blog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: calc(100vh - 70px);
+    width: 100%;
+    padding: 0; 
+}
+
+.col-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    height: 100%; 
+}
+
+.bg-maro-inchis { background-color: #583e3e; }
+.bg-maro-deschis { background-color: #8a5e5e; }
+.bg-gri-inchis { background-color: #3d3838; }
+
+.chenar-blog {
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.card-blog {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 220px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.eticheta-blog {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #2b78e4;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-blog {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.text-blog h3 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: #222;
+}
+
+.text-blog p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.link-blog {
+    color: #2b78e4;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.link-blog:hover {
+    text-decoration: underline;
+}
+
+/* Efect staggered pe desktop blog */
+@media (min-width: 1200px) {
+    
+    .bg-maro-inchis .chenar-blog { 
+        transform: translateY(40px); 
+    }
+    
+    .bg-maro-deschis .chenar-blog { 
+        transform: translateY(-40px); 
+    }
+    
+    .bg-gri-inchis .chenar-blog { 
+        transform: translateY(40px); 
+    }
+}
+
+/* --- PAGINA CONTACT --- */
+.fundal-contact {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('imagini/contact_main.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: start;
+}
+
+.container-info-bula {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.bula-info {
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 20px 20px 0 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.grid-contact-nou {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.8fr; 
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card-alb {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    border: 2px solid #333;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-content: start;
+}
+
+.titlu-card {
+    font-family: 'Impact', sans-serif;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card-formular { text-align: left; }
+.card-info, .card-program { text-align: center; }
+
+.linie-input {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.linie-input label {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.linie-input input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px dotted #555;
+    border-radius: 0;
+    padding: 5px;
+    height: 30px;
+    font-family: monospace;
+}
+
+.linie-input input:focus {
+    outline: none;
+    border-bottom: 2px solid #2b78e4;
+}
+
+.linie-textarea textarea {
+    width: 100%;
+    border: 1px solid #999;
+    padding: 10px;
+    margin-top: 5px;
+    resize: none;
+}
+
+.btn-trimite-nou {
+    background: linear-gradient(to bottom, #6fa8dc, #4a86b9);
+    color: white;
+    border: 1px solid #333;
+    padding: 10px 40px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.card-program .ora {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* --- TERMENI SI CONDITII --- */
+.container-termeni {
+    background-color: white;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    min-height: calc(100vh - 200px); 
+}
+
+.titlu-legal {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #333;
+    border-bottom: 2px solid #6fa8dc;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.data-actualizare {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+}
+
+.text-legal {
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.text-legal h3 {
+    color: #2b78e4;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.text-legal ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.text-legal li {
+    margin-bottom: 10px;
+    list-style-type: square;
+}
+
+/* --- SUBSOL (FOOTER) --- */
+.subsol {
+    background-color: #2e75b6;
+    color: white;
+    padding: 20px;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.linkuri-jos {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 20px;
+}
+
+.linkuri-jos a, .social-icons a {
+    color: white;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-icons {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+}
+
+/* --- ANIMATII LA SCROLL --- */
+
+/* Clasa initiala: invizibil si putin mai jos */
+.ascuns-scroll {
+    opacity: 0;
+    transform: translateY(50px); /* Mutat 50px in jos */
+    transition: all 0.8s ease-out; /* Durata animatiei */
+}
+
+/* Clasa activa: vizibil si la locul lui */
+.arata-scroll {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- RESPONSIVE: TABLETA (601px - 1199px) --- */
+@media (min-width: 601px) and (max-width: 1199px) {
+    
+    /* HEADER */
+    .meniu-pc { gap: 10px; }
+    .meniu-pc a { font-size: 0.8rem; }
+
+    /* HOME */
+    .grila-butoane { gap: 15px; padding: 0 10px; }
+    .grid-principal { grid-template-columns: 1fr 1fr; gap: 20px; }
+    .grid-info, .grid-iconite { grid-template-columns: 1fr; }
+    
+    /* SEDII */
+    .grila-orase { grid-template-columns: 1fr 1fr; }
+    
+    /* CONTACT */
+    .grid-contact-nou { grid-template-columns: 1fr 1fr; }
+    .card-program { grid-column: span 2; }
+
+    /* FLOTA */
+    .grid-flota { grid-template-columns: 1fr 1fr; }
+    .titlu-flota { font-size: 2.2rem; }
+    .card-flota:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 100%; 
+        max-width: 500px; 
+    }
+}
+
+/* --- RESPONSIVE: TELEFON (< 600px) --- */
+@media (max-width: 600px) {
+    
+    /* HEADER */
+    .meniu-pc { display: none; }
+    .btn-mobil { display: block; }
+    
+    /* HOME */
+    .grila-butoane { grid-template-columns: 1fr; padding: 0 20px; }
+    .grid-principal { grid-template-columns: 1fr; gap: 30px; }
+    .rand-grid { grid-template-columns: 1fr; gap: 10px; }
+    .grid-info { grid-template-columns: 1fr; }
+    
+    /* SERVICII */
+    .fundal-servicii { padding: 40px 10px; }
+    .grid-servicii { gap: 30px; }
+    .zona-carduri-servicii {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+    }
+    .card-serviciu {
+        width: 100%; 
+        max-width: 350px;
+        height: auto; 
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr;
+        padding: 15px 25px;
+        text-align: left;
+    }
+    .card-serviciu h3 { margin: 0; font-size: 1rem; justify-self: start; }
+    .card-serviciu i { margin: 0; font-size: 2rem; justify-self: end; }
+    .zona-tabel-servicii { padding: 10px; border-radius: 10px; }
+
+    /* DETALII LOCKER */
+    .grid-detalii-locker { grid-template-columns: 1fr; gap: 30px; }
+    .card-locker-vizual { max-width: 400px; justify-self: center; width: 100%; }
+    .grid-beneficii { grid-template-columns: 1fr; }
+    
+    /* FLOTA */
+    .grid-flota { grid-template-columns: 1fr; }
+    .titlu-flota { font-size: 1.8rem; }
+    .card-flota { max-width: 400px; justify-self: center; }
+    
+    /* ECHIPA */
+    .fundal-echipa { padding: 40px 0; overflow: hidden; }
+    .header-echipa { padding: 0 20px; }
+    .grid-echipa {
+        grid-template-columns: unset;
+        grid-auto-flow: column;
+        grid-auto-columns: calc(85% - 20px); 
+        gap: 20px;
+        padding: 20px 20px 40px 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+    .grid-echipa::-webkit-scrollbar { display: none; }
+    .card-membru { scroll-snap-align: center; scroll-margin: 20px; box-shadow: 0 10px 20px rgba(255,255,255,0.15); }
+    .poza-membru { height: 300px; }
+    .titlu-echipa { font-size: 1.8rem; }
+
+    /* DESPRE NOI */
+    .container-despre {
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px auto auto; 
+        min-height: auto;
+        height: auto;
+    }
+    .imagine-despre { grid-row: 1; width: 100%; height: 100%; }
+    .text-overlay-despre { font-size: 1rem; padding: 15px; bottom: 0; }
+    .col-despre { padding: 30px 20px; }
+    .albastru-despre { justify-content: flex-start; }
+
+    /* BLOG */
+    .grid-blog { grid-template-columns: 1fr; min-height: auto; }
+    .col-blog { padding: 50px 20px; }
+
+    /* CONTACT */
+    .fundal-contact { padding: 40px 10px; }
+    .grid-contact-nou { grid-template-columns: 1fr; gap: 20px; }
+    .card-program { grid-column: auto; }
+    .container-info-bula { justify-content: center; }
+
+    /* TERMENI */
+    .container-termeni { margin: 20px; padding: 20px; }
+    .titlu-legal { font-size: 1.8rem; }
+
+    /* DIVERSE */
+    .grila-orase { grid-template-columns: 1fr; }
+    .container-map { height: 400px; }
+    .bara-cautare { grid-template-columns: 1fr; }
+
+    /* FOOTER */
+    .subsol { grid-template-columns: 1fr; justify-items: center; gap: 20px; }
+    .linkuri-jos { justify-content: center; }
+    .social { justify-content: center; }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastExpress - Harta Sedii</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagini/logo_curieri.jpg">
+</head>
+<body>
+
+    <header class="antet">
+        <div class="logo-box">
+            <a href="index.html" style="text-decoration:none; color:inherit; display: grid; grid-template-columns: auto auto; gap: 10px; align-items: center;">
+                <img src="imagini/logo_curieri.jpg" alt="Logo" class="logo-img">
+                <span class="nume-site">FastExpress</span>
+            </a>
+        </div>
+
+        <nav class="meniu-pc">
+            <a href="index.html" class="activ"><i class="fas fa-home"></i> Firma</a>
+            <a href="servicii.html"><i class="fas fa-box-open"></i> Servicii</a>
+            <a href="flota.html"><i class="fas fa-camera"></i> Flota</a>
+            <a href="echipa.html"><i class="fas fa-users"></i> Echipa</a>
+            <a href="despre.html"><i class="fas fa-info-circle"></i> Despre noi</a>
+            <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+            <a href="blog.html"><i class="fas fa-bolt"></i> Blog</a>
+        </nav>
+
+        <a href="javascript:void(0);" class="btn-mobil" onclick="schimbaMeniu()">
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <span>Meniu</span>
+        </a>
+    </header>
+
+    <div id="meniu-tel" class="overlay-mobil">
+        <a href="javascript:void(0)" class="btn-inchide" onclick="schimbaMeniu()">&times;</a>
+        <div class="linkuri-mobil">
+            <a href="servicii.html">Servicii</a>
+            <a href="flota.html">Flota</a>
+            <a href="echipa.html">Echipa</a>
+            <a href="despre.html">Despre noi</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </div>
+
+    <main class="pagina-sedii">
+        
+        <h1 class="titlu-mare centru">Rețeaua Națională FastExpress</h1>
+        <p class="descriere-centru">Avem sedii în cele mai importante orașe pentru a asigura livrarea rapidă.</p>
+
+        <div class="container-harta">
+            <img src="imagini/harta_sedii.jpg" alt="Harta Sedii Romania" class="img-harta">
+        </div>
+
+        <div class="zona-lista-orase">
+            <h2 class="titlu-serif centru">Lista Locațiilor Noastre</h2>
+            
+            <div class="grila-orase">
+                <div class="card-oras central">
+                    <i class="fas fa-star"></i>
+                    <h3>Oradea</h3>
+                    <p>Sediu Central</p>
+                    <p class="adresa">Soseaua Borsului nr. 66</p>
+                </div>
+
+                <div class="card-oras">
+                    <i class="fas fa-building"></i>
+                    <h3>București</h3>
+                    <p>Hub Logistic</p>
+                </div>
+
+                <div class="card-oras">
+                    <i class="fas fa-building"></i>
+                    <h3>Cluj-Napoca</h3>
+                    <p>Centru Regional</p>
+                </div>
+
+                <div class="card-oras">
+                    <i class="fas fa-building"></i>
+                    <h3>Timișoara</h3>
+                    <p>Depozit Vest</p>
+                </div>
+
+                <div class="card-oras">
+                    <i class="fas fa-building"></i>
+                    <h3>Iași</h3>
+                    <p>Depozit Est</p>
+                </div>
+
+                <div class="card-oras">
+                    <i class="fas fa-building"></i>
+                    <h3>Constanța</h3>
+                    <p>Punct Livrare</p>
+                </div>
+                 <div class="card-oras">
+                    <i class="fas fa-building"></i>
+                    <h3>Brașov</h3>
+                    <p>Centru Regional</p>
+                </div>
+                 <div class="card-oras">
+                    <i class="fas fa-building"></i>
+                    <h3>Craiova</h3>
+                    <p>Punct Livrare</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="subsol">
+        <div class="linkuri-jos">
+            <a href="despre.html">Despre</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="termeni.html">Termeni și condiții</a>
+        </div>
+        <div class="social">
+            <span>Social</span>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

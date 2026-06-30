@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastExpress - Curierat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagini/logo_curieri.jpg">
+</head>
+<body>
+
+    <header class="antet">
+        <div class="logo-box">
+            <img src="imagini/logo_curieri.jpg" alt="Logo" class="logo-img">
+            <span class="nume-site">FastExpress</span>
+        </div>
+
+        <nav class="meniu-pc">
+            <a href="index.html" class="activ"><i class="fas fa-home"></i> Firma</a>
+            <a href="servicii.html"><i class="fas fa-box-open"></i> Servicii</a>
+            <a href="flota.html"><i class="fas fa-camera"></i> Flota</a>
+            <a href="echipa.html"><i class="fas fa-users"></i> Echipa</a>
+            <a href="despre.html"><i class="fas fa-info-circle"></i> Despre noi</a>
+            <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+            <a href="blog.html"><i class="fas fa-bolt"></i> Blog</a>
+        </nav>
+
+        <a href="javascript:void(0);" class="btn-mobil" onclick="schimbaMeniu()">
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <span>Meniu</span>
+        </a>
+    </header>
+
+    <div id="meniu-tel" class="overlay-mobil">
+        <a href="javascript:void(0)" class="btn-inchide" onclick="schimbaMeniu()">&times;</a>
+        <div class="linkuri-mobil">
+            <a href="servicii.html">Servicii</a>
+            <a href="flota.html">Flota</a>
+            <a href="echipa.html">Echipa</a>
+            <a href="despre.html">Despre noi</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </div>
+
+    <section class="zona-foto">
+        <img src="imagini/depozit_curier.jpg" alt="Depozit" class="poza-mare"> 
+    </section>
+
+    <section class="zona-butoane">
+        <h1 class="titlu-mare">“Livrăm rapid, oriunde în țară!”</h1>
+        
+        <div class="grila-butoane">
+    
+            <a href="harta_sedii.html" class="btn-albastru">
+                <i class="fas fa-paper-plane"></i> 
+                <span>Harta sedii<br>FastExpress</span>
+            </a>
+
+            <a href="contact.html" class="btn-albastru">
+                <i class="fas fa-phone"></i> 
+                <span>Contacteaza<br>curier</span>
+            </a>
+
+            <a href="harta_locker.html" class="btn-albastru">
+                <i class="fas fa-map-marker-alt"></i> 
+                <span>Harta locatii<br>PICK-UP</span>
+            </a>
+        </div>
+        
+        <div class="sageata-jos">
+            <i class="fas fa-arrow-down"></i>
+        </div>
+    </section>
+
+    <main>
+        <div class="grid-principal">
+            
+            <div class="card-calc">
+                <div class="titlu-calc">Calculator pret</div>
+                
+                <div class="corp-calc">
+                    <div class="rand-grid">
+                        <div class="grup">
+                            <label>Locatie ridicare:</label>
+                            <select id="loc-plecare">
+                                <option value="" disabled selected>Selecteaza...</option>
+                            </select>
+                        </div>
+                        
+                        <div class="grup">
+                            <label>Greutate:</label>
+                            <div class="input-special">
+                                <input type="number" id="kg" min="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rand-grid">
+                        <div class="grup">
+                            <label>Locatie predare:</label>
+                            <select id="loc-sosire">
+                                <option value="" disabled selected>Selecteaza...</option>
+                            </select>
+                        </div>
+                        
+                        <div class="grup">
+                            <label class="ascuns">.</label>
+                            <button type="button" class="btn-calculeaza" onclick="faCalcul()">Calculeaza</button>
+                        </div>
+                    </div>
+
+                    <hr class="linie-sep">
+
+                    <div class="rand-pret-grid">
+                        <label class="eticheta-pret">Pret:</label>
+                        <div class="afisaj-pret-grid">
+                            <input type="text" id="pret-final" readonly>
+                            <span class="ron">RON</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="zona-info">
+                <h2 class="titlu-serif">Lideri în România la servicii de curierat</h2>
+                
+                <div class="grid-info">
+                    <div class="text-descriere">
+                        <p>› Suntem liderul serviciilor de curierat de peste 30 de ani. Îți oferim livrări rapide și sigure.</p>
+                        <p>› Trimite colete către prieteni, parteneri sau contabili, fără bătăi de cap.</p>
+                    </div>
+
+                    <div class="grid-iconite">
+                        <div class="card-mic">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h3>95%</h3>
+                            <p>livrări la timp</p>
+                        </div>
+                        <div class="card-mic">
+                            <i class="fas fa-users"></i>
+                            <h3>5M+</h3>
+                            <p>clienți fericiți</p>
+                        </div>
+                        <div class="card-mic">
+                            <i class="fas fa-truck"></i>
+                            <h3>100 +</h3>
+                            <p>vehicule</p>
+                        </div>
+                        <div class="card-mic">
+                            <i class="fas fa-box-open"></i>
+                            <h3>1500 +</h3>
+                            <p>curieri</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="subsol">
+        <div class="linkuri-jos">
+            <a href="despre.html">Despre</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="termeni.html">Termeni și condiții</a>
+        </div>
+        <div class="social">
+            <span>Social</span>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

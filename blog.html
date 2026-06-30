@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastExpress - Blog</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagini/logo_curieri.jpg">
+</head>
+<body>
+
+    <header class="antet">
+        <div class="logo-box">
+            <a href="index.html" style="text-decoration:none; color:inherit; display: grid; grid-template-columns: auto auto; gap: 10px; align-items: center;">
+                <img src="imagini/logo_curieri.jpg" alt="Logo" class="logo-img">
+                <span class="nume-site">FastExpress</span>
+            </a>
+        </div>
+
+        <nav class="meniu-pc">
+            <a href="index.html"><i class="fas fa-home"></i> Firma</a>
+            <a href="servicii.html"><i class="fas fa-box-open"></i> Servicii</a>
+            <a href="flota.html"><i class="fas fa-camera"></i> Flota</a>
+            <a href="echipa.html"><i class="fas fa-users"></i> Echipa</a>
+            <a href="despre.html"><i class="fas fa-info-circle"></i> Despre noi</a>
+            <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+            <a href="blog.html" class="activ"><i class="fas fa-bolt"></i> Blog</a>
+        </nav>
+
+        <a href="javascript:void(0);" class="btn-mobil" onclick="schimbaMeniu()">
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <span>Meniu</span>
+        </a>
+    </header>
+
+    <div id="meniu-tel" class="overlay-mobil">
+        <a href="javascript:void(0)" class="btn-inchide" onclick="schimbaMeniu()">&times;</a>
+        <div class="linkuri-mobil">
+            <a href="index.html">Firma</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="flota.html">Flota</a>
+            <a href="echipa.html">Echipa</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <main class="grid-blog">
+        
+        <div class="col-blog bg-maro-inchis">
+            <div class="chenar-blog">
+                <div class="card-blog">
+                    <div class="img-wrapper">
+                        <span class="eticheta-blog">SFATURI UTILE</span>
+                        <img src="imagini/despachetare.jpeg" alt="Ambalare colete">
+                    </div>
+                    <div class="text-blog">
+                        <h3>5 Reguli de Aur pentru Ambalarea Coletelor</h3>
+                        <p>Vrei ca pachetul tău să ajungă intact la destinație? Descoperă ghidul complet despre protejarea obiectelor fragile...</p>
+                        <a href="#" class="link-blog">Citește articolul <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-blog bg-maro-deschis">
+            <div class="chenar-blog">
+                <div class="card-blog">
+                    <div class="img-wrapper">
+                        <span class="eticheta-blog">PROMOVARE SERVICIU</span>
+                        <img src="imagini/locker_blog.webp" alt="Locker Delivery">
+                    </div>
+                    <div class="text-blog">
+                        <h3>De ce Livrarea la Locker este Viitorul Curieratului</h3>
+                        <p>Rapid, ieftin și prietenos cu mediul. Află cum rețeaua noastră de lockere îți oferă flexibilitate totală...</p>
+                        <a href="serviciu_locker.html" class="link-blog">Află mai multe <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-blog bg-gri-inchis">
+            <div class="chenar-blog">
+                <div class="card-blog">
+                    <div class="img-wrapper">
+                        <span class="eticheta-blog">INTERNATIONAL</span>
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=600&q=80" alt="Avion Cargo">
+                    </div>
+                    <div class="text-blog">
+                        <h3>Ghidul complet pentru expedieri internaționale fără griji</h3>
+                        <p>Vrei să trimiți colete în afara țării? Află totul despre documentele necesare, taxele vamale și cum să alegi cea mai eficientă rută...</p>
+                        <a href="#" class="link-blog">Citește articolul <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="subsol">
+        <div class="linkuri-jos">
+            <a href="despre.html">Despre</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="termeni.html">Termeni și condiții</a>
+        </div>
+        <div class="social">
+            <span>Social</span>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

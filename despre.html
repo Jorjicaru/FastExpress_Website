@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastExpress - Despre Noi</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="imagini/logo_curieri.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="antet">
+        <div class="logo-box">
+            <a href="index.html" style="text-decoration:none; color:inherit; display: grid; grid-template-columns: auto auto; gap: 10px; align-items: center;">
+                <img src="imagini/logo_curieri.jpg" alt="Logo" class="logo-img">
+                <span class="nume-site">FastExpress</span>
+            </a>
+        </div>
+
+        <nav class="meniu-pc">
+            <a href="index.html"><i class="fas fa-home"></i> Firma</a>
+            <a href="servicii.html"><i class="fas fa-box-open"></i> Servicii</a>
+            <a href="flota.html"><i class="fas fa-camera"></i> Flota</a>
+            <a href="echipa.html"><i class="fas fa-users"></i> Echipa</a>
+            <a href="despre.html" class="activ"><i class="fas fa-info-circle"></i> Despre noi</a>
+            <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+            <a href="blog.html"><i class="fas fa-bolt"></i> Blog</a>
+        </nav>
+
+        <a href="javascript:void(0);" class="btn-mobil" onclick="schimbaMeniu()">
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <div class="linie"></div>
+            <span>Meniu</span>
+        </a>
+    </header>
+
+    <div id="meniu-tel" class="overlay-mobil">
+        <a href="javascript:void(0)" class="btn-inchide" onclick="schimbaMeniu()">&times;</a>
+        <div class="linkuri-mobil">
+            <a href="index.html">Firma</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="flota.html">Flota</a>
+            <a href="echipa.html">Echipa</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </div>
+
+    <main class="container-despre">
+        
+        <div class="col-despre albastru-despre">
+            <p><strong>FastExpress a luat naștere în 1985</strong> din pasiunea pentru conectarea oamenilor.</p>
+            <p>Într-un garaj modest din București, cu un singur vehicul și mult entuziasm, am început mica noastră aventură.</p>
+            <br>
+            <p>De-a lungul anilor, am crescut împreună cu comunitatea noastră.</p>
+            <br>
+            <p>În 2000 am depășit 50 de angajați, iar în 2005 am extins acoperirea la peste 35 de județe.</p>
+            <br>
+            <p>Astăzi, cu o flotă de peste 100 de vehicule și o echipă dedicată, continuăm să punem pasiune în fiecare colet livrat.</p>
+        </div>
+
+        <div class="col-despre imagine-despre">
+            <div class="text-overlay-despre">
+                <p>Suntem dedicați să oferim soluții de curierat rapide, sigure și accesibile, contribuind la dezvoltarea comunității și apropierea oamenilor.</p>
+            </div>
+        </div>
+
+        <div class="col-despre albastru-despre">
+            <p>Calitatea serviciilor noastre este recunoscută prin:</p>
+            <ul class="lista-despre">
+                <li>Certificarea ISO 9001:2005 pentru managementul calității</li>
+                <li>Premiul "Top Company 2023" în domeniul logisticii</li>
+                <li>Certificatul "Eco-Friendly Business" pentru practicile sustenabile</li>
+                <li>Distincția "Excelență în Servicii 2024"</li>
+            </ul>
+            <br>
+            <p>La FastExpress, credem că afacerea noastră trebuie să aducă un plus comunității. Ne implicăm activ în:</p>
+            <ul class="lista-despre">
+                <li>Sprijinirea ONG-urilor locale cu transport gratuit</li>
+                <li>Programe de educație rutieră pentru tineri</li>
+                <li>Inițiative de protecție a mediului</li>
+                <li>Sponsoring pentru evenimente culturale și sportive</li>
+            </ul>
+            <br>
+            <p>Peste 50.000 de colete livrate anual înseamnă peste 50.000 de conexiuni umane pe care le facilităm.</p>
+        </div>
+
+    </main>
+
+    <footer class="subsol">
+        <div class="linkuri-jos">
+            <a href="despre.html">Despre</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="termeni.html">Termeni și condiții</a>
+        </div>
+        <div class="social">
+            <span>Social</span>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
